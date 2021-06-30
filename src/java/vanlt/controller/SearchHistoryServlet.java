@@ -70,7 +70,7 @@ public class SearchHistoryServlet extends HttpServlet {
                 request.setAttribute("DATEERR", "Date Must be format (yyyy-MM-dd) !!");
             }
             if (fromDate.length() > 0 && toDate.length() > 0) {
-                listSearch = bookDao.searchHis(userDTO.getId(), fromdate, todate); 
+                listSearch = bookDao.searchHis(userDTO.getId(), fromdate, todate);
                 request.setAttribute("ALLHISTORY", listSearch);
             }
             

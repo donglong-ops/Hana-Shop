@@ -2,6 +2,10 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/E:/FPT-University/CN5/LAB231/Lab01_HanaShop/src/java/vanlt/conn/MyConnection.java</file>
+            <file>file:/E:/FPT-University/CN5/LAB231/Lab01_HanaShop/web/META-INF/context.xml</file>
+            <file>file:/E:/FPT-University/CN5/LAB231/Lab01_HanaShop/web/WEB-INF/web.xml</file>
+        </group>
     </open-files>
 </project-private>

@@ -18,7 +18,7 @@
         <jsp:include page="navbar.jsp"/>
         <c:set var="search" value="${requestScope.SEARCH_RESULT}"/>
         <div class="container form-row">
-            <div class="container border mt-3 bg-light p-3" style="max-width: 500px; margin-left: 20%"> 
+            <div class="container border mt-3 bg-light p-3" style="max-width: 500px; margin-left: 10%"> 
                 <form action="DispatcherController" method="POST">
                     <h3 class="text-center mb-4">Search form</h3>
                     <div class="form-row">
@@ -73,9 +73,9 @@
                     </div>
                 </c:if>
             </div>
-            <img class="border rounded mt-3" src="img/bg.jpg" style="max-width: 500px; width: 490px; height: 320px; margin-right: -15% "/>
+            <img class="border rounded mt-3" src="img/bg.jpg" style="max-width: 500px; width: 470px; height: 320px;  margin-left: 2%"/>
         </div>
-        <div class="container mt-5" style="width: 1150px;">
+        <div class="container mt-5" style="width: 1150px">
             <c:set var="cart" value="${sessionScope.CART}"/>
             <c:if test="${not empty search}">
                 <table class="table table-bordered">

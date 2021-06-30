@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
-        <nav class="container navbar navbar-expand-lg navbar-light bg-light mb-20" style="background-color: #c0cfdd!important;"> 
+        <nav class="container navbar navbar-expand-lg navbar-light bg-light mb-20"> 
             <a class="navbar-brand" href="#">Hana Shop</a>
             <img class="border rounded" src="img/bg.jpg" width="150"/>
             <div class="form-row ml-5">                  

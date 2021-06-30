@@ -253,7 +253,7 @@ public class FoodDAO implements Serializable {
         try {
             String sql = "  SELECT F.foodId, F.foodname , F.foodPrice , F.quantity, F.description, F.createDate , F.categoriId , F.imageLink "
                     + "   From Food F  "
-                    + "   WHERE F.statusId = 1 and F.foodId =  ? ";
+                    + "   WHERE F.statusId = 1 and f.foodId =  ? ";
             conn = MyConnection.getMyConnection();
             preStm = conn.prepareStatement(sql);
             preStm.setInt(1, foodID);

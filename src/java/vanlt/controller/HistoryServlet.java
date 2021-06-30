@@ -50,7 +50,7 @@ public class HistoryServlet extends HttpServlet {
             List<BookingDTO> list = bookDao.allBookingUser(userDTO.getId());
             request.setAttribute("ALLHISTORY", list);
         } catch (SQLException ex) {
-            log("Error His SQL: " + ex.getMessage()); 
+            log("Error His SQL: " + ex.getMessage());
         } catch (NamingException ex) {
             log("Error His Naming: " + ex.getMessage());
         } finally {

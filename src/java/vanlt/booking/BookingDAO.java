@@ -54,7 +54,7 @@ public class BookingDAO implements Serializable {
             preStm.setInt(1, dto.getUserId());
             preStm.setTimestamp(2, new Timestamp(System.currentTimeMillis()));
             preStm.setFloat(3, dto.getTotal());
-            preStm.setString(4, "Cash");
+            preStm.setString(4, "NOPAYPAL");
             rs = preStm.executeQuery();
             if (rs.next()) {
                 id = rs.getInt("Id");
@@ -137,6 +137,19 @@ public class BookingDAO implements Serializable {
             closeConnection();
         }
         return list;
+    }
+
+    public void updateStatusBooking(int bookingId) throws SQLException, NamingException {
+        try {
+            conn = MyConnection.getMyConnection();
+            String sql = " UPDATE Booking SET PayWith = ? WHERE BookingId = ? ";
+            preStm = conn.prepareStatement(sql);
+            preStm.setString(1, "PAYPAL");
+            preStm.setInt(2, bookingId);
+            preStm.executeUpdate();
+        } finally {
+            closeConnection();
+        }
     }
 
 }

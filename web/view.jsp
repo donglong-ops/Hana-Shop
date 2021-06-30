@@ -61,7 +61,7 @@
                                 <c:set var="amount" value="${item.value}"></c:set>
                                 <c:set var="foodDto" value="${mapFood.get(foodId)}" ></c:set>
 
-                                <td>${counter.count}</td>
+                                    <td>${counter.count}</td>
                                 <td>${foodDto.foodname}</td>
                                 <td>${cart.getPriceDisplay(foodId)}</td>
                                 <td>${foodDto.getCategoryname(foodDto.categoriID)}</td>

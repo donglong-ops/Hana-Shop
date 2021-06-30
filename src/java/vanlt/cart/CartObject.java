@@ -22,7 +22,7 @@ import vanlt.dtos.FoodDto;
 public class CartObject implements Serializable {
 
     private FoodDto foodDto;
-    public Map<Integer, Integer> items; // food id , quantity
+    public Map<Integer, Integer> items;
     public Map<Integer, FoodDto> food;
 
     public FoodDto getFoodDto() {
@@ -60,14 +60,14 @@ public class CartObject implements Serializable {
             amount = this.items.get(foodId) + 1;
         }
 
-        this.items.put(foodId, amount); 
+        this.items.put(foodId, amount); // id tua và số lượng
         FoodDAO dao = new FoodDAO();
-        FoodDto dto = dao.getFoodByID(foodId);
+        FoodDto dto = dao.getFoodByID(foodId); // trả về 1 dtoFood theo ID
 
         if (food == null) {
             food = new HashMap<>();
         }
-        food.put(foodId, dto); 
+        food.put(foodId, dto); // lưu
 
     }
 

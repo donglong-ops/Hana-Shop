@@ -46,8 +46,10 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("txtUsername");
         String password = request.getParameter("txtPassword");
         try {
+            String encryPassword = org.apache.commons.codec.digest.DigestUtils.sha256Hex(password);
             if (username != null && password != null && username.trim().length() > 0 && password.trim().length() > 0) {
                 RegistrationDAO dao = new RegistrationDAO();
+                //RegistrationDTO result = dao.checkLogin(username, encryPassword);
                 RegistrationDTO result = dao.checkLogin(username, password);
                 HttpSession session = request.getSession();
                 if (result != null) {

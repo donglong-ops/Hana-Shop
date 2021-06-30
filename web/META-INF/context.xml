@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="/Lab01_HanaShop">
   <Resource auth="Container" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" 
-            name="SE1425" password="123456" type="javax.sql.DataSource" 
-            url="jdbc:sqlserver://localhost:1433;databaseName=lab1_hanaShop" username="sa">   
+            name="SE1402" password="123456" type="javax.sql.DataSource" 
+            url="jdbc:sqlserver://localhost:1433;databaseName=lab1_hanaShop" username="sa1">   
     </Resource>
 </Context>
